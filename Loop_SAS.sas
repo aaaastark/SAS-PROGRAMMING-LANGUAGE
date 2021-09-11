@@ -1,0 +1,22 @@
+/* Do Index Loop */
+DATA DO_INDEX_LOOP;
+SUM = 0;
+DO VAR = 1 to 5;
+   SUM = SUM+VAR;
+END;
+
+PROC PRINT DATA = DO_INDEX_LOOP;
+RUN;
+
+
+/* Do While Loop */
+
+DATA DO_WHILE_LOOP;
+SUM = 0;
+VAR = 1;
+DO WHILE(VAR<9) ;
+   SUM = SUM+VAR;
+   VAR+1;
+END;
+PROC PRINT DATA = DO_WHILE_LOOP;
+RUN;
